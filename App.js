@@ -7,8 +7,9 @@
  */
 
 import React, {useEffect} from 'react';
-import RNBootSplash from "react-native-bootsplash";
-import {Text} from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+import RNBootSplash from 'react-native-bootsplash';
+import Navigation from "./src/Navigation";
 
 function App() {
 
@@ -17,9 +18,9 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Text>Hello</Text>
-    </>
+    <NavigationContainer>
+      <Navigation />
+    </NavigationContainer>
   );
 };
 
