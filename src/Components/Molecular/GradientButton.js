@@ -2,32 +2,35 @@ import React from 'react';
 import { StyleSheet, TouchableWithoutFeedback } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {
-  CustomText
-} from "../Atomic";
-import {
-  heightPercentageToDP as hp
+  heightPercentageToDP as hp,
+  widthPercentageToDP as wp
 } from 'react-native-responsive-screen';
+import { Text } from "../Atomic";
+import { theme } from "../../Constants";
 
-export default function GradientButton({children, onBtnPressHandler, ...props}) {
+export default function GradientButton({children, elevation, onBtnPressHandler, ...props}) {
   return (
     <TouchableWithoutFeedback
-      onPress={()=>alert("Hello")}
+      onPress={onBtnPressHandler}
     >
       <LinearGradient
         useAngle={true}
         angle={136}
         angleCenter={{ x: 0.5, y: 0.5 }}
         locations={[0, 1]}
-        colors={['#6a60ee', '#56edff']}
+        elevation={elevation}
+        colors={[theme.colors.primary, theme.colors.secondary]}
         style={styles.linearGradient}
       >
-        <CustomText styles={{
-          fontWeight: "semi-bold",
-          color: "white",
-          fontSize: hp(4)
-        }}>
+        <Text 
+          type="semiBold"
+          style={{
+            color: theme.colors.white,
+            fontSize: wp(5)
+          }}
+        >
           {children}
-        </CustomText>
+        </Text>
       </LinearGradient>
     </TouchableWithoutFeedback>
   )
@@ -36,7 +39,6 @@ export default function GradientButton({children, onBtnPressHandler, ...props}) 
 
 const styles = StyleSheet.create({
   linearGradient: {
-    flex: 1,
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: hp(2),

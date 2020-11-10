@@ -12,17 +12,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     backgroundColor: theme.colors.white
   },
-  input: {
-    fontSize: wp(3.5),
-    borderBottomWidth: 0.5,
-    borderBottomColor: theme.colors.black,
-    paddingBottom: wp(1.5)
-  },
-  forgotPassword: {
-    color: theme.colors.darkGray,
-    textAlign: "right",
-    fontSize: wp(3),
-    marginTop: hp(1.5)
+  otpContainer: {
+    alignItems: "center"
   },
   signupInfoContainer: {
     flexDirection: "row",

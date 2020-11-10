@@ -17,25 +17,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0.5,
     borderBottomColor: theme.colors.black,
     paddingBottom: wp(1.5)
-  },
-  forgotPassword: {
-    color: theme.colors.darkGray,
-    textAlign: "right",
-    fontSize: wp(3),
-    marginTop: hp(1.5)
-  },
-  signupInfoContainer: {
-    flexDirection: "row",
-    marginTop: hp(2.5),
-    justifyContent: "center"
-  },
-  noAccount: {
-    color: theme.colors.darkGray,
-    fontSize: wp(3)
-  },
-  signupHere: {
-    color: theme.colors.primary,
-    fontSize: wp(3)
   }
 });
 

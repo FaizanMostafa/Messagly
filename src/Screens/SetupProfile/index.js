@@ -4,12 +4,10 @@ import {
   StatusBar,
   View
 } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from 'react-native-responsive-screen';
-import { Text } from "../../Components/Atomic";
 import {
   GradientButton,
   InfoHeader,
@@ -18,24 +16,25 @@ import {
 import { theme } from "../../Constants";
 import styles from "./styles";
 
-export default function Login({navigation, ...props}) {
+export default function SetupProfile({navigation , ...props}) {
   return (
     <SafeAreaView style={{flex: 1}}>
       <StatusBar barStyle="dark-content" backgroundColor={theme.colors.white} />
       <View style={styles.container}>
         <InfoHeader
-          infoText={"Welcome back,\nPlease login to continue."}
+          infoText={"Welcome to Messagly!"}
         />
         <View>
           <Input
-            label="Mobile Number"
-            placeholder="+91 944 584 63 53"
+            label="New Password"
+            placeholder="***************"
             inputStyle={styles.input}
             fontWeight="semiBold"
-            keyboardType="phone-pad"
+            keyboardType="default"
+            secureTextEntry
           />
           <Input
-            label="Password"
+            label="Confirm Password"
             placeholder="***************"
             inputStyle={styles.input}
             containerStyle={{marginTop: hp(5)}}
@@ -43,23 +42,14 @@ export default function Login({navigation, ...props}) {
             keyboardType="default"
             secureTextEntry
           />
-          <TouchableOpacity onPress={()=>navigation.navigate("ForgotPassword")}>
-            <Text type="semiBold" style={styles.forgotPassword}>Forgot Password?</Text>
-          </TouchableOpacity>
         </View>
         <View>
           <GradientButton
             onBtnPressHandler={()=>{}}
             elevation={10}
           >
-            Login
+            Get Started
           </GradientButton>
-          <View style={styles.signupInfoContainer}>
-            <Text type="semiBold" style={styles.noAccount}>Do not have an account? </Text>
-            <TouchableOpacity onPress={()=>navigation.navigate("Signup")}>
-              <Text type="semiBold" style={styles.signupHere}>Sign up here.</Text>
-            </TouchableOpacity>
-          </View>
         </View>
       </View>
     </SafeAreaView>

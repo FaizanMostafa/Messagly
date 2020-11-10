@@ -1,7 +1,7 @@
-import CustomText from "./CustomText";
-import CustomInput from "./CustomInput";
+import Text from "./CustomText";
+import OTPInput from "./CustomOTPInput";
 
 export {
-    CustomText,
-    CustomInput
+    Text,
+    OTPInput
 };

@@ -9,7 +9,7 @@ function getFontFamily(fontWeight) {
     case "regular":
       return "Montserrat-Regular";
 
-    case "semi-bold":
+    case "semiBold":
       return "Montserrat-SemiBold";
 
     case "bold":

@@ -4,12 +4,11 @@ import {
 } from 'react-native';
 import {getFontFamily} from "../../Helpers";
 
-export default function CustomText({ styles, children, ...props }) {
+export default function CustomText({ style, type, children, ...props }) {
 
-  const {fontWeight, ...rStyles} = styles;
   const customStyles = {
-    fontFamily: getFontFamily(fontWeight),
-    ...rStyles
+    fontFamily: getFontFamily(type),
+    ...style
   }
 
   return (
