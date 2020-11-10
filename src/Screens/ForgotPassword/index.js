@@ -31,7 +31,7 @@ export default function ForgetPassword({navigation, ...props}) {
         </View>
         <View>
           <GradientButton
-            onBtnPressHandler={()=>{}}
+            onBtnPressHandler={()=>navigation.navigate("Login")}
             elevation={10}
           >
             Reset
