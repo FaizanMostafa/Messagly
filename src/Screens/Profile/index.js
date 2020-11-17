@@ -6,10 +6,6 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp
-} from 'react-native-responsive-screen';
 import LinearGradient from 'react-native-linear-gradient';
 import {
   Header
