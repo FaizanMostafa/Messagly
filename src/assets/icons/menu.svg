@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" width="20" height="16">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-22 -43L353 -43L353 624L-22 624Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3d3d3d } 
+	</style>
+	<g id="Contacts" clip-path="url(#cp1)">
+		<g id="Top Bar">
+			<g id="Menu Icon">
+				<path id="Rectangle 2" class="shp0" d="M4 0L16 0C16.55 0 17 0.45 17 1L17 1C17 1.55 16.55 2 16 2L4 2C3.45 2 3 1.55 3 1L3 1C3 0.45 3.45 0 4 0Z" />
+				<path id="Rectangle 2 Copy 2" class="shp0" d="M4 14L16 14C16.55 14 17 14.45 17 15L17 15C17 15.55 16.55 16 16 16L4 16C3.45 16 3 15.55 3 15L3 15C3 14.45 3.45 14 4 14Z" />
+				<path id="Rectangle 2 Copy" class="shp0" d="M1 7L19 7C19.55 7 20 7.45 20 8L20 8C20 8.55 19.55 9 19 9L1 9C0.45 9 0 8.55 0 8L0 8C0 7.45 0.45 7 1 7Z" />
+			</g>
+		</g>
+	</g>
+</svg>

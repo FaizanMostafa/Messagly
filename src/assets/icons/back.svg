@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 17" width="23" height="17">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-19 -40L356 -40L356 627L-19 627Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #3d3d3d;stroke-linecap:round;stroke-width: 2 } 
+	</style>
+	<g id="Chat Screen" clip-path="url(#cp1)">
+		<g id="BAck icon">
+			<path id="Path 4" class="shp0" d="M1.66 8.8L21.84 8.8" />
+			<path id="Path 5" class="shp0" d="M7.36 15.58L1.59 9.51C1.21 9.11 1.2 8.45 1.57 8.04L7.36 1.74L7.36 1.74L7.36 15.58" />
+		</g>
+	</g>
+</svg>
