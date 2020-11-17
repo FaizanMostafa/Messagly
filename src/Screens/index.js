@@ -4,6 +4,7 @@ import ForgotPassword from "./ForgotPassword";
 import SetupProfile from "./SetupProfile";
 import OTP from "./OTP";
 import Contacts from "./Contacts";
+import Profile from "./Profile";
 
 export {
     Login,
@@ -11,5 +12,6 @@ export {
     ForgotPassword,
     SetupProfile,
     OTP,
-    Contacts
+    Contacts,
+    Profile
 };

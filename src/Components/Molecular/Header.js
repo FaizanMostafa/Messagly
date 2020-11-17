@@ -31,7 +31,7 @@ const InfoHeader = ({ infoText, ...props }) => {
         style={{
           ...styles.heading,
           marginLeft: props.rightIcon ? 0 : wp(-5),
-          marginRight: props.rightIcon ? 0 : wp(32)
+          marginRight: props.rightIcon ? 0 : wp(35)
         }}
       >
         {infoText}

@@ -1,10 +1,10 @@
 import React from 'react';
 import AuthStack from "./authStack";
-import { Contacts } from "../Screens";
+import { Profile } from "../Screens";
 
 export default function MyStack() {
   return (
     // <AuthStack />
-    <Contacts />
+    <Profile />
   );
 }

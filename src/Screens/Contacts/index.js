@@ -21,7 +21,7 @@ import NewIcon from "../../assets/icons/new.svg"
 import styles from "./styles";
 import users from "./users";
 
-export default function Chats({navigation , ...props}) {
+export default function Contacts({navigation , ...props}) {
 
   const [searchTerm, setSearchTerm] = useState("");
 
