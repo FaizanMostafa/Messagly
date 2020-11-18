@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   SafeAreaView,
   StatusBar,
-  View,
-  Image,
-  TouchableOpacity,
+  View
 } from 'react-native';
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp
-} from 'react-native-responsive-screen';
-import LinearGradient from 'react-native-linear-gradient';
 import {
   Header
 } from "../../Components/Molecular";
@@ -19,8 +12,6 @@ import { theme } from "../../Constants";
 import styles from "./styles";
 
 export default function AboutUs({navigation , ...props}) {
-
-  const [isActive, setIsActive] = useState(true);
 
   return (
     <SafeAreaView style={{flex: 1}}>

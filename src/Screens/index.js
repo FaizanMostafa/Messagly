@@ -6,6 +6,7 @@ import OTP from "./OTP";
 import Contacts from "./Contacts";
 import Profile from "./Profile";
 import AboutUs from "./AboutUs";
+import Settings from "./Settings";
 
 export {
     Login,
@@ -15,5 +16,6 @@ export {
     OTP,
     Contacts,
     Profile,
-    AboutUs
+    AboutUs,
+    Settings
 };
