@@ -42,7 +42,7 @@ export default function Settings({navigation , ...props}) {
               type="semiBold"
               style={styles.subHeading}
             >
-              Be Discoverable By Others
+              Discoverable By Others
             </Text>
             <Switch
               isEnabled={isDiscoverable}

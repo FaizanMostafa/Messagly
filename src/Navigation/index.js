@@ -1,10 +1,10 @@
 import React from 'react';
 import AuthStack from "./authStack";
-import { Settings } from "../Screens";
+import { ChatScreen } from "../Screens";
 
 export default function MyStack() {
   return (
     // <AuthStack />
-    <Settings />
+    <ChatScreen />
   );
 }

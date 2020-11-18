@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-336 -372L39 -372L39 295L-336 295Z" />
+		</clipPath>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="-4.971" y1="-4.971" x2="28.97" y2="28.971">
+			<stop offset="0" stop-color="#6a60ee"  />
+			<stop offset="1" stop-color="#56edff"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: #ffffff } 
+	</style>
+	<g id="Chat Screen - Typing" clip-path="url(#cp1)">
+		<path id="Oval 2" class="shp0" d="M12 24C18.63 24 24 18.63 24 12C24 5.37 18.63 0 12 0C5.37 0 0 5.37 0 12C0 18.63 5.37 24 12 24Z" />
+		<path id="Path 4" class="shp1" d="M20 12L6 6L8.7 12L6 18L20 12Z" />
+	</g>
+</svg>

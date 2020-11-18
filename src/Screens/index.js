@@ -7,6 +7,7 @@ import Contacts from "./Contacts";
 import Profile from "./Profile";
 import AboutUs from "./AboutUs";
 import Settings from "./Settings";
+import ChatScreen from "./ChatScreen";
 
 export {
     Login,
@@ -17,5 +18,6 @@ export {
     Contacts,
     Profile,
     AboutUs,
-    Settings
+    Settings,
+    ChatScreen
 };
