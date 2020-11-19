@@ -1,15 +1,9 @@
-const messages = [
+const messages = [  
   {
-    id: "1",
-    message: "Hey babe, what’s up?",
+    id: "4",
+    message: "Sure!",
     mine: false,
-    time: "12:00pm"
-  },
-  {
-    id: "2",
-    message: "Nothing much, what are you upto nowadays?",
-    mine: true,
-    time: "12:03pm"
+    time: "12:04pm"
   },
   {
     id: "3",
@@ -18,10 +12,16 @@ const messages = [
     time: "12:03pm"
   },
   {
-    id: "4",
-    message: "Sure!",
+    id: "2",
+    message: "Nothing much, what are you upto nowadays?",
+    mine: true,
+    time: "12:03pm"
+  },
+  {
+    id: "1",
+    message: "Hey babe, what’s up?",
     mine: false,
-    time: "12:04pm"
+    time: "12:00pm"
   }
 ];
 

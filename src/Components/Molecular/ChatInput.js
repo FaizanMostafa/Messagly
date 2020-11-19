@@ -2,7 +2,7 @@ import React from 'react';
 import {
   View,
   TextInput,
-  TouchableOpacity
+  TouchableWithoutFeedback
 } from 'react-native';
 import {
   widthPercentageToDP as wp
@@ -20,9 +20,9 @@ export default function CustomInput(props) {
         onChangeText={(text)=>props.onChangeText(text)}
         value={props.value}
       />
-      <TouchableOpacity onPress={props.onPressSend}>
+      <TouchableWithoutFeedback onPress={props.onPressSend}>
         <SendButton height={wp(9.5)} width={wp(9.5)} />
-      </TouchableOpacity>
+      </TouchableWithoutFeedback>
     </View>
   );
 }
