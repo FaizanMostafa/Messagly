@@ -18,6 +18,7 @@ export default function CustomInput(props) {
       <TextInput
         style={{fontFamily: getFontFamily("medium"), paddingHorizontal: wp(3), paddingVertical: wp(4), fontSize: wp(3.8), width: wp(87)}}
         onChangeText={(text)=>props.onChangeText(text)}
+        placeholder="Write something here..."
         value={props.value}
       />
       <TouchableWithoutFeedback onPress={props.onPressSend}>

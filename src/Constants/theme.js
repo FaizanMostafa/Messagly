@@ -8,7 +8,10 @@ const theme = {
     darkGray: "#707070",
     lightGray: "#b0b0b0",
     dimGray: "#f0f0f0",
-    red: "#d0021b"
+    red: "#d0021b",
+    active: "#7ed321",
+    inactive: "#f5a623",
+    away: "#9b9b9b"
   }
 };
 
