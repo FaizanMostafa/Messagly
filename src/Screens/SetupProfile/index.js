@@ -52,10 +52,11 @@ export default function SetupProfile({navigation , ...props}) {
     });
   }
 
-  const onGetStarted = () => {
-    const data = {
-      dp: avatarSource.uri
-    };
+  const handleOnGetStarted = () => {
+    props.handleLogin();
+    // const data = {
+    //   dp: avatarSource.uri
+    // };
   }
 
   return (
@@ -100,7 +101,7 @@ export default function SetupProfile({navigation , ...props}) {
         </View>
         <View>
           <GradientButton
-            onBtnPressHandler={()=>{}}
+            onBtnPressHandler={handleOnGetStarted}
             elevation={10}
           >
             Get Started

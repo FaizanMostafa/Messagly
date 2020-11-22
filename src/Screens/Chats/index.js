@@ -38,7 +38,10 @@ export default function Chats({navigation , ...props}) {
   )
 
   const renderItem = ({item: user}) => (
-    <TouchableOpacity style={styles.renderItemContainer}>
+    <TouchableOpacity
+      style={styles.renderItemContainer}
+      onPress={()=>navigation.navigate("ChatScreen")}
+    >
       <Image source={user.dp} />
       <View style={styles.rightContainer}>
         <Text type="semiBold" style={styles.userName}>{user.name}</Text>

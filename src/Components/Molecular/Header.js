@@ -1,9 +1,10 @@
 import React from 'react';
 import {
   View,
-  StyleSheet
+  StyleSheet,
+  TouchableOpacity
 } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
@@ -13,6 +14,7 @@ import { theme } from '../../Constants';
 import { Text } from "../Atomic";
 
 const InfoHeader = ({ infoText, ...props }) => {
+  const navigation = useNavigation();
   return (
     <View style={styles.mainContainer}>
       {
@@ -20,7 +22,7 @@ const InfoHeader = ({ infoText, ...props }) => {
           ?
             props.leftIcon
           :
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=>navigation.openDrawer()}>
               <MenuIcon
                 height={wp(5)}
               />

@@ -9,6 +9,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from 'react-native-responsive-screen';
+import { useNavigation } from '@react-navigation/native';
 import { Text } from "../../Components/Atomic";
 import {
   GradientButton,
@@ -18,7 +19,8 @@ import {
 import { theme } from "../../Constants";
 import styles from "./styles";
 
-export default function Login({navigation, ...props}) {
+export default function Login(props) {
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={{flex: 1}}>
       <StatusBar barStyle="dark-content" backgroundColor={theme.colors.white} />
@@ -49,7 +51,7 @@ export default function Login({navigation, ...props}) {
         </View>
         <View>
           <GradientButton
-            onBtnPressHandler={()=>{}}
+            onBtnPressHandler={()=>props.handleLogin()}
             elevation={10}
           >
             Login
